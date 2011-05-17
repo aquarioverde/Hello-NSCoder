@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C393B9E1381C0D4003A95CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C393B9D1381C0D4003A95CC /* UIKit.framework */; };
+		3C393BA01381C0D4003A95CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C393B9F1381C0D4003A95CC /* Foundation.framework */; };
+		3C393BA21381C0D4003A95CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C393BA11381C0D4003A95CC /* CoreGraphics.framework */; };
+		3C393BA81381C0D4003A95CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C393BA61381C0D4003A95CC /* InfoPlist.strings */; };
+		3C393BAB1381C0D4003A95CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BAA1381C0D4003A95CC /* main.m */; };
+		3C393BAE1381C0D4003A95CC /* HelloNSCoderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BAD1381C0D4003A95CC /* HelloNSCoderAppDelegate.m */; };
+		3C393BB11381C0D4003A95CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C393BAF1381C0D4003A95CC /* MainWindow.xib */; };
+		3C393BB81381C0D4003A95CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C393B9D1381C0D4003A95CC /* UIKit.framework */; };
+		3C393BB91381C0D4003A95CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C393B9F1381C0D4003A95CC /* Foundation.framework */; };
+		3C393BBA1381C0D4003A95CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C393BA11381C0D4003A95CC /* CoreGraphics.framework */; };
+		3C393BC21381C0D5003A95CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C393BC01381C0D5003A95CC /* InfoPlist.strings */; };
+		3C393BC51381C0D5003A95CC /* HelloNSCoderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 3C393BC41381C0D5003A95CC /* HelloNSCoderTests.h */; };
+		3C393BC71381C0D5003A95CC /* HelloNSCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BC61381C0D5003A95CC /* HelloNSCoderTests.m */; };
+		3C393BD31381C247003A95CC /* NCEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BD11381C247003A95CC /* NCEventDetailViewController.m */; };
+		3C393BD41381C247003A95CC /* NCEventDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C393BD21381C247003A95CC /* NCEventDetailView.xib */; };
+		3C393BE11381C4EA003A95CC /* NSCoder_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C393BE01381C4EA003A95CC /* NSCoder_Icon.png */; };
+		3C393BE41381C55A003A95CC /* NCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BE31381C55A003A95CC /* NCEvent.m */; };
+		3C393BE81381D0BE003A95CC /* NCEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BE71381D0BE003A95CC /* NCEventsTableViewController.m */; };
+		3C393BEB1381D29A003A95CC /* NCEventLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BEA1381D29A003A95CC /* NCEventLoader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C393BBB1381C0D4003A95CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C393B901381C0D4003A95CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C393B981381C0D4003A95CC;
+			remoteInfo = HelloNSCoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C393B991381C0D4003A95CC /* HelloNSCoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloNSCoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C393B9D1381C0D4003A95CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3C393B9F1381C0D4003A95CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C393BA11381C0D4003A95CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3C393BA51381C0D4003A95CC /* HelloNSCoder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloNSCoder-Info.plist"; sourceTree = "<group>"; };
+		3C393BA71381C0D4003A95CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C393BA91381C0D4003A95CC /* HelloNSCoder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloNSCoder-Prefix.pch"; sourceTree = "<group>"; };
+		3C393BAA1381C0D4003A95CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C393BAC1381C0D4003A95CC /* HelloNSCoderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloNSCoderAppDelegate.h; sourceTree = "<group>"; };
+		3C393BAD1381C0D4003A95CC /* HelloNSCoderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloNSCoderAppDelegate.m; sourceTree = "<group>"; };
+		3C393BB01381C0D4003A95CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		3C393BB71381C0D4003A95CC /* HelloNSCoderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloNSCoderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C393BBF1381C0D5003A95CC /* HelloNSCoderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloNSCoderTests-Info.plist"; sourceTree = "<group>"; };
+		3C393BC11381C0D5003A95CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3C393BC31381C0D5003A95CC /* HelloNSCoderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloNSCoderTests-Prefix.pch"; sourceTree = "<group>"; };
+		3C393BC41381C0D5003A95CC /* HelloNSCoderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloNSCoderTests.h; sourceTree = "<group>"; };
+		3C393BC61381C0D5003A95CC /* HelloNSCoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloNSCoderTests.m; sourceTree = "<group>"; };
+		3C393BD01381C247003A95CC /* NCEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCEventDetailViewController.h; sourceTree = "<group>"; };
+		3C393BD11381C247003A95CC /* NCEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCEventDetailViewController.m; sourceTree = "<group>"; };
+		3C393BD21381C247003A95CC /* NCEventDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCEventDetailView.xib; sourceTree = "<group>"; };
+		3C393BE01381C4EA003A95CC /* NSCoder_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NSCoder_Icon.png; sourceTree = "<group>"; };
+		3C393BE21381C55A003A95CC /* NCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCEvent.h; sourceTree = "<group>"; };
+		3C393BE31381C55A003A95CC /* NCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCEvent.m; sourceTree = "<group>"; };
+		3C393BE61381D0BE003A95CC /* NCEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCEventsTableViewController.h; sourceTree = "<group>"; };
+		3C393BE71381D0BE003A95CC /* NCEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCEventsTableViewController.m; sourceTree = "<group>"; };
+		3C393BE91381D29A003A95CC /* NCEventLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCEventLoader.h; sourceTree = "<group>"; };
+		3C393BEA1381D29A003A95CC /* NCEventLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCEventLoader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C393B961381C0D4003A95CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C393B9E1381C0D4003A95CC /* UIKit.framework in Frameworks */,
+				3C393BA01381C0D4003A95CC /* Foundation.framework in Frameworks */,
+				3C393BA21381C0D4003A95CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C393BB31381C0D4003A95CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C393BB81381C0D4003A95CC /* UIKit.framework in Frameworks */,
+				3C393BB91381C0D4003A95CC /* Foundation.framework in Frameworks */,
+				3C393BBA1381C0D4003A95CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C393B8E1381C0D4003A95CC = {
+			isa = PBXGroup;
+			children = (
+				3C393BA31381C0D4003A95CC /* HelloNSCoder */,
+				3C393BBD1381C0D5003A95CC /* HelloNSCoderTests */,
+				3C393B9C1381C0D4003A95CC /* Frameworks */,
+				3C393B9A1381C0D4003A95CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C393B9A1381C0D4003A95CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C393B991381C0D4003A95CC /* HelloNSCoder.app */,
+				3C393BB71381C0D4003A95CC /* HelloNSCoderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C393B9C1381C0D4003A95CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C393B9D1381C0D4003A95CC /* UIKit.framework */,
+				3C393B9F1381C0D4003A95CC /* Foundation.framework */,
+				3C393BA11381C0D4003A95CC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C393BA31381C0D4003A95CC /* HelloNSCoder */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BE51381C561003A95CC /* DataModel */,
+				3C393BDF1381C4AA003A95CC /* UI */,
+				3C393BDE1381C494003A95CC /* XIB */,
+				3C393BDD1381C486003A95CC /* Images */,
+				3C393BAC1381C0D4003A95CC /* HelloNSCoderAppDelegate.h */,
+				3C393BAD1381C0D4003A95CC /* HelloNSCoderAppDelegate.m */,
+				3C393BA41381C0D4003A95CC /* Supporting Files */,
+			);
+			path = HelloNSCoder;
+			sourceTree = "<group>";
+		};
+		3C393BA41381C0D4003A95CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BA51381C0D4003A95CC /* HelloNSCoder-Info.plist */,
+				3C393BA61381C0D4003A95CC /* InfoPlist.strings */,
+				3C393BA91381C0D4003A95CC /* HelloNSCoder-Prefix.pch */,
+				3C393BAA1381C0D4003A95CC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C393BBD1381C0D5003A95CC /* HelloNSCoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BC41381C0D5003A95CC /* HelloNSCoderTests.h */,
+				3C393BC61381C0D5003A95CC /* HelloNSCoderTests.m */,
+				3C393BBE1381C0D5003A95CC /* Supporting Files */,
+			);
+			path = HelloNSCoderTests;
+			sourceTree = "<group>";
+		};
+		3C393BBE1381C0D5003A95CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BBF1381C0D5003A95CC /* HelloNSCoderTests-Info.plist */,
+				3C393BC01381C0D5003A95CC /* InfoPlist.strings */,
+				3C393BC31381C0D5003A95CC /* HelloNSCoderTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C393BDD1381C486003A95CC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BE01381C4EA003A95CC /* NSCoder_Icon.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		3C393BDE1381C494003A95CC /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BAF1381C0D4003A95CC /* MainWindow.xib */,
+				3C393BD21381C247003A95CC /* NCEventDetailView.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		3C393BDF1381C4AA003A95CC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BD01381C247003A95CC /* NCEventDetailViewController.h */,
+				3C393BD11381C247003A95CC /* NCEventDetailViewController.m */,
+				3C393BE61381D0BE003A95CC /* NCEventsTableViewController.h */,
+				3C393BE71381D0BE003A95CC /* NCEventsTableViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3C393BE51381C561003A95CC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C393BE21381C55A003A95CC /* NCEvent.h */,
+				3C393BE31381C55A003A95CC /* NCEvent.m */,
+				3C393BE91381D29A003A95CC /* NCEventLoader.h */,
+				3C393BEA1381D29A003A95CC /* NCEventLoader.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C393B981381C0D4003A95CC /* HelloNSCoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C393BCA1381C0D5003A95CC /* Build configuration list for PBXNativeTarget "HelloNSCoder" */;
+			buildPhases = (
+				3C393B951381C0D4003A95CC /* Sources */,
+				3C393B961381C0D4003A95CC /* Frameworks */,
+				3C393B971381C0D4003A95CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloNSCoder;
+			productName = HelloNSCoder;
+			productReference = 3C393B991381C0D4003A95CC /* HelloNSCoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C393BB61381C0D4003A95CC /* HelloNSCoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C393BCD1381C0D5003A95CC /* Build configuration list for PBXNativeTarget "HelloNSCoderTests" */;
+			buildPhases = (
+				3C393BB21381C0D4003A95CC /* Sources */,
+				3C393BB31381C0D4003A95CC /* Frameworks */,
+				3C393BB41381C0D4003A95CC /* Resources */,
+				3C393BB51381C0D4003A95CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C393BBC1381C0D4003A95CC /* PBXTargetDependency */,
+			);
+			name = HelloNSCoderTests;
+			productName = HelloNSCoderTests;
+			productReference = 3C393BB71381C0D4003A95CC /* HelloNSCoderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C393B901381C0D4003A95CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = NSCoder_BCN;
+			};
+			buildConfigurationList = 3C393B931381C0D4003A95CC /* Build configuration list for PBXProject "HelloNSCoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C393B8E1381C0D4003A95CC;
+			productRefGroup = 3C393B9A1381C0D4003A95CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C393B981381C0D4003A95CC /* HelloNSCoder */,
+				3C393BB61381C0D4003A95CC /* HelloNSCoderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C393B971381C0D4003A95CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C393BA81381C0D4003A95CC /* InfoPlist.strings in Resources */,
+				3C393BB11381C0D4003A95CC /* MainWindow.xib in Resources */,
+				3C393BD41381C247003A95CC /* NCEventDetailView.xib in Resources */,
+				3C393BE11381C4EA003A95CC /* NSCoder_Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C393BB41381C0D4003A95CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C393BC21381C0D5003A95CC /* InfoPlist.strings in Resources */,
+				3C393BC51381C0D5003A95CC /* HelloNSCoderTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C393BB51381C0D4003A95CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C393B951381C0D4003A95CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C393BAB1381C0D4003A95CC /* main.m in Sources */,
+				3C393BAE1381C0D4003A95CC /* HelloNSCoderAppDelegate.m in Sources */,
+				3C393BD31381C247003A95CC /* NCEventDetailViewController.m in Sources */,
+				3C393BE41381C55A003A95CC /* NCEvent.m in Sources */,
+				3C393BE81381D0BE003A95CC /* NCEventsTableViewController.m in Sources */,
+				3C393BEB1381D29A003A95CC /* NCEventLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C393BB21381C0D4003A95CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C393BC71381C0D5003A95CC /* HelloNSCoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C393BBC1381C0D4003A95CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C393B981381C0D4003A95CC /* HelloNSCoder */;
+			targetProxy = 3C393BBB1381C0D4003A95CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C393BA61381C0D4003A95CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C393BA71381C0D4003A95CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3C393BAF1381C0D4003A95CC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C393BB01381C0D4003A95CC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		3C393BC01381C0D5003A95CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C393BC11381C0D5003A95CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C393BC81381C0D5003A95CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C393BC91381C0D5003A95CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		3C393BCB1381C0D5003A95CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloNSCoder/HelloNSCoder-Prefix.pch";
+				INFOPLIST_FILE = "HelloNSCoder/HelloNSCoder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3C393BCC1381C0D5003A95CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloNSCoder/HelloNSCoder-Prefix.pch";
+				INFOPLIST_FILE = "HelloNSCoder/HelloNSCoder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3C393BCE1381C0D5003A95CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloNSCoder.app/HelloNSCoder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloNSCoderTests/HelloNSCoderTests-Prefix.pch";
+				INFOPLIST_FILE = "HelloNSCoderTests/HelloNSCoderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3C393BCF1381C0D5003A95CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HelloNSCoder.app/HelloNSCoder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloNSCoderTests/HelloNSCoderTests-Prefix.pch";
+				INFOPLIST_FILE = "HelloNSCoderTests/HelloNSCoderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C393B931381C0D4003A95CC /* Build configuration list for PBXProject "HelloNSCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C393BC81381C0D5003A95CC /* Debug */,
+				3C393BC91381C0D5003A95CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C393BCA1381C0D5003A95CC /* Build configuration list for PBXNativeTarget "HelloNSCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C393BCB1381C0D5003A95CC /* Debug */,
+				3C393BCC1381C0D5003A95CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3C393BCD1381C0D5003A95CC /* Build configuration list for PBXNativeTarget "HelloNSCoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C393BCE1381C0D5003A95CC /* Debug */,
+				3C393BCF1381C0D5003A95CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C393B901381C0D4003A95CC /* Project object */;
+}
