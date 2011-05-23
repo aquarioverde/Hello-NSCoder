@@ -8,11 +8,13 @@
 
 #import "NCEventDetailViewController.h"
 #import "NCEvent.h"
+#import "NCConf.h"
 
 
 @implementation NCEventDetailViewController
 
-@synthesize shortDescriptionLabel, startDateLabel,locationLabel, descriptionView;
+@synthesize scrollView;
+@synthesize shortDescriptionLabel, startDateLabel,locationLabel, descriptionView, mapView;
 @synthesize event;
 
 
@@ -34,10 +36,12 @@
 - (void)dealloc
 {
     self.event = nil;
+    self.mapView = nil;
     self.descriptionView = nil;
     self.locationLabel = nil;
     self.startDateLabel = nil;
     self.shortDescriptionLabel = nil;
+    self.scrollView = nil;
     
     [super dealloc];
 }
@@ -71,6 +75,23 @@
     self.startDateLabel.text = [formatter stringFromDate:event.startDate];
     self.locationLabel.text = event.location;
     self.descriptionView.text = event.fullDescription;
+    
+    // apply fonts and font size to labels
+    self.shortDescriptionLabel.font=[UIFont boldSystemFontOfSize:BIGFONT];
+    self.descriptionView.font=[UIFont fontWithName:FONT size:MEDIUMFONT];
+    self.locationLabel.font=[UIFont fontWithName:FONT size:MEDIUMFONT];
+    self.startDateLabel.font=[UIFont fontWithName:FONT size:MEDIUMFONT];
+    
+    // ajust text view to size of text so no scrolling is needed in text view
+    CGRect frame = descriptionView.frame;
+    frame.size.height = descriptionView.contentSize.height;
+    descriptionView.frame = frame;
+    
+    CGRect mapViewFrame = mapView.frame;
+    mapViewFrame.origin.y = frame.origin.y + frame.size.height + 20;
+    mapView.frame = mapViewFrame;
+    
+    scrollView.contentSize = CGSizeMake(320, mapViewFrame.origin.y + mapViewFrame.size.height + 20);
     
     [super viewWillAppear:animated];
 }

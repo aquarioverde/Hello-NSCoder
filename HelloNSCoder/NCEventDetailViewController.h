@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
 @class NCEvent;
 
@@ -23,9 +24,11 @@
  */
 @property (nonatomic, retain) NCEvent *event;
 
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UILabel *shortDescriptionLabel;
 @property (nonatomic, retain) IBOutlet UILabel *startDateLabel;
 @property (nonatomic, retain) IBOutlet UILabel *locationLabel;
 @property (nonatomic, retain) IBOutlet UITextView *descriptionView;
+@property (nonatomic, retain) IBOutlet MKMapView *mapView;
 
 @end
