@@ -26,6 +26,8 @@
 		3C393BE41381C55A003A95CC /* NCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BE31381C55A003A95CC /* NCEvent.m */; };
 		3C393BE81381D0BE003A95CC /* NCEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BE71381D0BE003A95CC /* NCEventsTableViewController.m */; };
 		3C393BEB1381D29A003A95CC /* NCEventLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C393BEA1381D29A003A95CC /* NCEventLoader.m */; };
+		3C9E047A1383F1BC00165BEB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9E04791383F1BC00165BEB /* Icon.png */; };
+		3CB8D6C7138AA15600283E3C /* dataEvents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CB8D6C6138AA15600283E3C /* dataEvents.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		3C393BE71381D0BE003A95CC /* NCEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCEventsTableViewController.m; sourceTree = "<group>"; };
 		3C393BE91381D29A003A95CC /* NCEventLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCEventLoader.h; sourceTree = "<group>"; };
 		3C393BEA1381D29A003A95CC /* NCEventLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCEventLoader.m; sourceTree = "<group>"; };
+		3C9E04791383F1BC00165BEB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3CB8D6C6138AA15600283E3C /* dataEvents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataEvents.plist; sourceTree = "<group>"; };
+		3CB8D6C9138AA19C00283E3C /* NCConf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCConf.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,8 @@
 		3C393BA31381C0D4003A95CC /* HelloNSCoder */ = {
 			isa = PBXGroup;
 			children = (
+				3CB8D6C8138AA16800283E3C /* Conf */,
+				3CB8D6C4138AA12E00283E3C /* Data */,
 				3C393BE51381C561003A95CC /* DataModel */,
 				3C393BDF1381C4AA003A95CC /* UI */,
 				3C393BDE1381C494003A95CC /* XIB */,
@@ -169,6 +176,7 @@
 		3C393BDD1381C486003A95CC /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3C9E04791383F1BC00165BEB /* Icon.png */,
 				3C393BE01381C4EA003A95CC /* NSCoder_Icon.png */,
 			);
 			name = Images;
@@ -203,6 +211,22 @@
 				3C393BEA1381D29A003A95CC /* NCEventLoader.m */,
 			);
 			name = DataModel;
+			sourceTree = "<group>";
+		};
+		3CB8D6C4138AA12E00283E3C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3CB8D6C6138AA15600283E3C /* dataEvents.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		3CB8D6C8138AA16800283E3C /* Conf */ = {
+			isa = PBXGroup;
+			children = (
+				3CB8D6C9138AA19C00283E3C /* NCConf.h */,
+			);
+			name = Conf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +303,8 @@
 				3C393BB11381C0D4003A95CC /* MainWindow.xib in Resources */,
 				3C393BD41381C247003A95CC /* NCEventDetailView.xib in Resources */,
 				3C393BE11381C4EA003A95CC /* NSCoder_Icon.png in Resources */,
+				3C9E047A1383F1BC00165BEB /* Icon.png in Resources */,
+				3CB8D6C7138AA15600283E3C /* dataEvents.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +518,7 @@
 				3C393BCC1381C0D5003A95CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C393BCD1381C0D5003A95CC /* Build configuration list for PBXNativeTarget "HelloNSCoderTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +527,7 @@
 				3C393BCF1381C0D5003A95CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
